@@ -9,7 +9,7 @@ namespace dental_record_system
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -65,14 +65,19 @@ namespace dental_record_system
                 MessageBox.Show("Record Deleted!");
             }
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             textBox2.Clear();
             textBox7.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
 
+            comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
             comboBox5.SelectedIndex = -1;
 
             dateTimePicker1.Value = DateTime.Now;

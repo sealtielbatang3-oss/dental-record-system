@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
             textBox5 = new TextBox();
             label6 = new Label();
@@ -249,6 +250,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Preventive Care", "Routine Dental Exams", "Professional Teeth Cleaning", "Digital X-rays", "Dental Sealants", "Fluoride Treatments", "Restorative Treatments", "Composite (Tooth-Colored) Fillings", "Dental Crowns", "Bridges", "Root Canal Therapy", "Dentures (Full or Partial)", "Cosmetic Procedures", "Professional Teeth Whitening", "Porcelain Veneers", "Dental Bonding", "Gum Contouring", "Orthodontics", "Traditional Braces", "Clear Aligners (Invisalign)", "Retainers", "Oral Surgery & Specialized Care", "Tooth Extractions", "Wisdom Tooth Removal", "Dental Implants", "Periodontal (Gum Disease) Therapy", "TMJ/TMD Treatment", "Sedation Dentistry" });
             comboBox2.Location = new Point(86, 68);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(257, 23);
@@ -297,6 +299,7 @@
             // comboBox5
             // 
             comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "Paid", "Unpaid" });
             comboBox5.Location = new Point(108, 99);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(121, 23);
@@ -441,6 +444,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1156, 643);
             Controls.Add(dataGridView1);
             Controls.Add(button5);
